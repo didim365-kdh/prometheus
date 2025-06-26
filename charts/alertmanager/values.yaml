@@ -272,7 +272,7 @@ persistence:
   ## If undefined (the default) or set to null, no storageClassName spec is
   ## set, choosing the default provisioner.
   ##
-  # storageClass: "-"
+  storageClass: "ktc-nfs-client"
   accessModes:
     - ReadWriteOnce
   size: 50Mi
