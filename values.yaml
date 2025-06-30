@@ -852,6 +852,9 @@ serverFiles:
         static_configs:
           - targets:
             - 10.111.66.31:8001
+            - 10.111.66.31:8444
+            - 10.107.17.86:80
+            - 10.107.17.86:443
 
       - job_name: 'kdh-kong-db'
         metrics_path: /metrics
