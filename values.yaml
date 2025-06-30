@@ -840,6 +840,14 @@ serverFiles:
           - targets:
             - localhost:9090
 
+      - job_name: 'keycloak'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - 10.100.23.231:80
+
+            
+
       # A scrape configuration for running Prometheus on a Kubernetes cluster.
       # This uses separate scrape configs for cluster components (i.e. API server, node)
       # and services to allow each to use different authentication configs.
