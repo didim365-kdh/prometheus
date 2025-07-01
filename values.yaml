@@ -838,7 +838,7 @@ serverFiles:
       - job_name: prometheus
         static_configs:
           - targets:
-            - localhost:9090
+            - localhost:80
 
       - job_name: 'kdh-keycloak'
         metrics_path: /metrics
